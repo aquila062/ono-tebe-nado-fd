@@ -1,4 +1,4 @@
-.overlay {
+.overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -8,6 +8,14 @@
     opacity: 60%;
     background-color: rgba(0, 0, 0, 1);
   }
+.under-line{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.contacts{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
 /*Шапка сайта*/
 .menu{
     display: grid;
@@ -23,6 +31,7 @@
     justify-content: flex-start;
     flex-direction: row;
     font-size: 18px;
+    font-family: "Raleway", sans-serif;
     list-style: circle;
 }
 .list-item{
@@ -32,9 +41,6 @@
 .list-item:first-child{
     list-style: none;
     margin-left: 50px;
-}
-.under-line {
-    text-decoration: underline;
 }
 .header__logo{
     display: flex;
@@ -46,6 +52,7 @@
     flex-direction: column;
     font-size: 18px;
     line-height: 24.3px;
+    font-family: "Raleway", sans-serif;
     width: 240px;
     height: 98px;
     margin: 0 50px 0 184px;
@@ -64,6 +71,7 @@
 }
 .cover__title{
     font-size: 100px;
+    font-family: "Raleway", sans-serif;
     color: white;
     font-weight: 700;
     letter-spacing: 30%;
@@ -93,6 +101,7 @@
 .cover-text{
     font-size: 22px;
     text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
     color: #FFF;
     font-weight: 400;
     word-spacing: 22px;
@@ -135,17 +144,21 @@
 }
 .footer__menu-list{
     font-size: 18px;
+    font-family: "Raleway", sans-serif;
 }
 
 /*lots*/
+
+.lots{
+    display: flex;
+    flex-direction: column;
+    margin: 0 13px;
+}
 .lots__heading{
     font-size: 40px;
     margin: 0 0 27px 40px;
-}
-.lots{
-    margin: 0 24px 0;
-    display: flex;
-    flex-direction: column;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
 }
 .lots__card-list{
     display: flex;
@@ -156,19 +169,25 @@
 .lots__card-list-item{
     display: flex;
     flex-direction: column;
+
     justify-content: space-between;
     position: relative;
+    width: 342px;
+    height: 615px;
 }
 .card__title{
     font-size: 22px;
     font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
     color: #FFF;
     margin: 48px 40px 0;
     z-index: 1;
 }
 .card__text{
     font-size: 20px;
-    font-weight: 4  00;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
     color: #FFF;
     margin: 0 40px 48px;
     z-index: 1;
@@ -182,24 +201,58 @@
 .card_type_film{
     background-image: url(../images/card-lot-01.jpg);
     background-size: cover;
-    width: 334px;
-    height: 596px;
 }
 .card_type_book{
     background-image: url(../images/card-lot-02.jpg);
     background-size: cover;
-    width: 334px;
-    height: 596px;
+
 }
 .card_type_picture{
     background-image: url(../images/card-lot-03.jpg);
     background-size: cover;
-    width: 334px;
-    height: 596px;
 }
 
 /*about*/
 
 .about{
     display: grid;
+    grid-template-columns: auto 2fr;
+    gap: 72px;
+    margin: 0 24px;
+}
+.about__logo{
+    width: 240px;
+    height: 240px;
+    background-color: #000;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0 0 47px;
+}
+.about__logo-image{
+    width: 140px;
+    height: 140px;
+}
+.about__column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 133px;
+}
+.about__title{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+}
+.about__subtitle{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+}
+.about__subtitle:first-child{
+    margin-bottom: 24px;
 }
