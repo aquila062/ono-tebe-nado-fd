@@ -136,9 +136,6 @@
 .footer__menu-list{
     font-size: 18px;
 }
-.footer__social-list-item{
-    
-}
 
 /*lots*/
 .lots__heading{
@@ -205,5 +202,4 @@
 
 .about{
     display: grid;
-    grid-template-rows: repeat(2 1fr);
 }
