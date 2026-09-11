@@ -14,8 +14,11 @@
 }
 .contacts{
     text-decoration: underline;
-    text-underline-offset: 3px;
+    text-underline-offset: 4px;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
 }
+
 /*Шапка сайта*/
 .menu{
     display: grid;
@@ -67,6 +70,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: start;
     margin-bottom: 180px;
 }
 .cover__title{
@@ -75,11 +79,14 @@
     color: white;
     font-weight: 700;
     letter-spacing: 30%;
-    padding: 165px 50px 0px;
     z-index: 1;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
+    margin: 165px auto 106px;
+}
+.letter-spacing{
+    letter-spacing: 0;
 }
 .aligned-text_left{
     text-align: left;
@@ -89,14 +96,25 @@
 }
 .aligned-text_right{
     text-align: right;
+    
+}
+.aligned-text{
+    width: 1000px;
+    display: block;
+    margin-top: 17px;
+    
+}
+.aligned-text:first-child{
+    margin-top: 0;
 }
 .cover__subtitle{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 106px 21px 50px;
     z-index: 1;
+    width: 1000px;
+    margin: 0 auto;
 }
 .cover-text{
     font-size: 22px;
@@ -105,54 +123,25 @@
     color: #FFF;
     font-weight: 400;
     word-spacing: 22px;
+    word-spacing: 85%;
 }
 .cever_button{
+    border: 1px #FFF solid;
     width: 256px;
     height: 51px;
     color: #FFF;
-    font-size: 28px;
-    background-color: transparent;
-    border-color: #FFF;
-}
-
-/*footer*/
-.footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 180px 50px 100px;
-}
-.footer__menu-list{
-    text-align: center;
-    list-style: none;
-}
-.footer__social-list{
-    display: flex;
-    justify-content: space-between;
-    width: 243px;
-    height: 48px;
-}
-
-.footer__social-icon{
-    height: 48px;
-    width: 48px;
-}
-.footer_information{
-    width: 265px;
-    height: 98px;
-    margin: 0;
-}
-.footer__menu-list{
-    font-size: 18px;
     font-family: "Raleway", sans-serif;
+    font-size: 22px;
+    background-color: transparent;
+    text-transform: uppercase;
+    word-spacing: 0;
 }
-
 /*lots*/
 
 .lots{
     display: flex;
     flex-direction: column;
-    margin: 0 13px;
+    margin: 0 19px;
 }
 .lots__heading{
     font-size: 40px;
@@ -164,16 +153,25 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: relative;
+    flex-wrap: wrap;
+    gap: 20px;
 } 
 .lots__card-list-item{
     display: flex;
     flex-direction: column;
-
+    list-style: none;
     justify-content: space-between;
     position: relative;
-    width: 342px;
-    height: 615px;
+    padding: 0;
+}
+.card__link{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-between;
+    width: 338px;
+    height: 600px;
 }
 .card__title{
     font-size: 22px;
@@ -188,6 +186,8 @@
     font-size: 20px;
     font-weight: 400;
     font-family: "Raleway", sans-serif;
+    line-height: 120%;
+    word-spacing: normal;
     color: #FFF;
     margin: 0 40px 48px;
     z-index: 1;
@@ -201,15 +201,17 @@
 .card_type_film{
     background-image: url(../images/card-lot-01.jpg);
     background-size: cover;
+    background-position: center;
 }
 .card_type_book{
     background-image: url(../images/card-lot-02.jpg);
     background-size: cover;
-
+    background-position: center;
 }
 .card_type_picture{
     background-image: url(../images/card-lot-03.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 /*about*/
@@ -249,10 +251,42 @@
 }
 .about__subtitle{
     font-size: 20px;
-    line-height: 25px;
+    line-height: 24px;
     font-weight: 400;
     font-family: "Raleway", sans-serif;
 }
 .about__subtitle:first-child{
     margin-bottom: 24px;
+}
+
+/*footer*/
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 180px 50px 100px;
+}
+.footer__menu-list{
+    text-align: center;
+    list-style: none;
+}
+.footer__social-list{
+    display: flex;
+    justify-content: space-between;
+    width: 243px;
+    height: 48px;
+}
+
+.footer__social-icon{
+    height: 48px;
+    width: 48px;
+}
+.footer_information{
+    min-width: fit-content;
+    height: 98px;
+    margin: 0;
+}
+.footer__menu-list{
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
 }
