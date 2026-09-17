@@ -171,7 +171,7 @@
     list-style: none;
     justify-content: space-between;
     min-width: 334px;
-    min-height: 620px;
+    min-height: 596px;
 }
 .card__title{
     font-size: 22px;
@@ -188,7 +188,7 @@
     font-size: 20px;
     font-weight: 400;
     font-family: "Raleway", sans-serif;
-    line-height: 130%;
+    line-height: 120%;
     letter-spacing: 0%;
     word-spacing: normal;
     color: #FFF;
@@ -293,6 +293,6 @@
     height: fit-content;
     margin: 0;
 }
-.footer-underline{
+.footer__menu-link_active{
     text-decoration: none;  
 }
